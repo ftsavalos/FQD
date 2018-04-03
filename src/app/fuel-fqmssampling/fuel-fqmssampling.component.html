@@ -1,0 +1,37 @@
+<p-card title="Fuel Quality Monitoring System">
+    <div>
+        <ng-form-input label="Year:">
+            2016
+        </ng-form-input>
+    </div>
+
+    <div>
+        <ng-form-input label="Summer Period"></ng-form-input>
+        <div class="summerPeriod">
+            <ng-form-input elementId="summerPeriodStart" label="Start:">
+                <div>1st May</div>
+            </ng-form-input>
+            <ng-form-input elementId="summerPeriodEnd" label="End:">
+                <div>30th September</div>
+            </ng-form-input>
+        </div>
+
+        <ng-form-input label="Winter Period"></ng-form-input>
+        <div class="winterPeriod">
+            <ng-form-input elementId="winterPeriodStart" label="Start:">
+                <div>1st October</div>
+            </ng-form-input>
+            <ng-form-input elementId="winterPeriodEnd" label="End:">
+                <div>30th April</div>
+            </ng-form-input>
+        </div>
+    </div>
+
+    <ng-form-input elementId="hasVPWGranted" label="Has a Vapour Waiver been granted?:">
+        <p-autoComplete [(ngModel)]="fqmssampling.hasVPWGranted" [suggestions]="filteredHasVPWGrantedOptions"
+                        (completeMethod)="search($event)" [dropdown]="true">
+
+        </p-autoComplete>
+    </ng-form-input>
+
+</p-card>

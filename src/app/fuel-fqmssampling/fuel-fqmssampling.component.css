@@ -1,0 +1,19 @@
+[label]{
+    font: bold;
+}
+
+.summerPeriod ng-form-input {
+    text-align: center;
+}
+
+.winterPeriod ng-form-input {
+    text-align: center;
+}
+
+.summerPeriod div {
+    text-align: left;
+}
+
+.winterPeriod div {
+    text-align: left;
+}
